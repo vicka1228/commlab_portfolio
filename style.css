@@ -56,7 +56,7 @@ html, body {
 
 .parallax {
   /* The image used */
-  background-image: url("images/nasa_meteors.jpeg");
+  background-image: url("nasa_meteors.jpeg");
 /*   position: relative; */
   /* full height */
   min-height: 65%; 
