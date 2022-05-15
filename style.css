@@ -1,0 +1,289 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Lucida Sans Typewriter, monospace;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("images/nasa_meteors.jpeg");
+/*   position: relative; */
+  /* full height */
+  min-height: 65%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+#top-header{
+  position: fixed;
+  top:0;
+    text-align: center;
+    height: 60px; 
+    background-color: #3F3F3F;
+  width: 100%;
+}
+
+
+#hello{
+  font-size: 50px;
+  color: black;
+}
+
+/*************************/
+/*    Styling  Header    */
+/*************************/
+header{
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+
+
+/****************/
+/* Styling Logo */
+/****************/
+/* #logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 15%;
+}
+ #logo img{
+    width: 60%; 
+    float: left;
+    padding: 0px;
+    height: 60px;
+}*/
+
+#name{
+/*   position: relative; */
+  display: flex;
+  justify-content: center;
+  align-content: left;
+  flex-direction: column;
+  float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 25%;
+  font-family: 'Norican', cursive;
+  font-size: 150%;
+
+}
+
+
+footer{
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  height: 60px; 
+  background-color: #3F3F3F;
+  width: 100%;
+}
+
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+ position: relative; 
+    float: right;
+    width: 75%;
+    height: 60px;
+    margin: none;
+}
+
+#menu ul{
+    text-align: center;
+    float: left;
+    margin: none;
+     background: #3F3F3F; 
+    background-color: #3F3F3F;
+}
+
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    line-height: 60px;
+}
+
+#menu li a{
+
+    color: #FFF;
+}
+
+#menu li:hover a, #menu li span{
+    background: #FFF;
+    color: #3F3F3F;
+    border-left: 1px solid #3F3F3F;
+    text-decoration: none;
+}
+
+/* On screens that are 790px wide or less, make the menu links stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 790px) {
+  #menu li a {
+    float: none;
+    width: 100%;
+  }
+} */
+
+/* a[id]::before {
+    content: '';
+    display: block;
+    height: 50px;
+    margin: -30px 0 0;
+} */
+
+/* media query at 680 */
+
+h2{
+  font-family: 'Norican', cursive;
+  text-align: center;
+  font-size: 300%;
+  padding: 7%;
+}
+
+#Intro{
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 60px 80px;
+  text-align: justify;
+}
+
+#Zoom{
+  margin: 60px + 20%;
+  color: white;
+  background-color: #B1B1B1;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#Comic{
+  color: white;
+  background-color: #747474;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#Sound{
+  color: white;
+  background-color: #444444;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#Video{
+  color: white;
+  background-color: #0A0708;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 75px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #341948; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  font-family: Lucida Sans Typewriter, monospace;
+  font-size: 12px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
